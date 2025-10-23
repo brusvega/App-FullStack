@@ -3,27 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".EditarActivity">
 
     <EditText
-        android:id="@+id/etUser"
-        android:hint="Usuario"
+        android:id="@+id/etNombreEditar"
+        android:hint="Nombre del producto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/etPass"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
+        android:id="@+id/etPrecioEditar"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:text="Ingresar"
+        android:id="@+id/btnActualizar"
+        android:text="Actualizar producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:text="Eliminar producto"
+        android:backgroundTint="@android:color/holo_red_light"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
